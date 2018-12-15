@@ -1,11 +1,13 @@
 body:{
 	margin: 0;
+	font-family: Work Sans;
 }
 
 header{
 	background: #888;
 	color:white;
 	padding: 15px 15px 0 15px
+	font-family: sans-serif;
 }
 
 header h1 {
