@@ -7,15 +7,17 @@ header{
 	background: #888;
 	color:white;
 	padding: 15px 15px 0 15px
-	font-family: sans-serif;
+	font-family: sans-serif; 
 }
 
 header h1 {
 	margin: 0;
+	display: inline;
 }
 
 nav ul{
 	margin: 0;
+	display: inline;
 }
 
 nav ul li{
