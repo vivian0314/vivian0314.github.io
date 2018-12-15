@@ -1,22 +1,31 @@
-body:{
+body{
 	margin: 0;
 	font-family: sans-serif;
 }
 
 header{
-	background: #888;
+	background: #fcfcfc;
 	color:white;
-	padding: 15px 15px 0 15px
-	font-family: sans-serif; 
+	padding: 15px 15px 0 15px;
+	margin: 15px;
 }
 
 header h1 {
 	margin: 0;
 	display: inline;
+	font-family: sans-serif; 
+	font-size: 16
+}
+
+header h2 {
+	margin: 0;
+	font-family: sans-serif; 
+	font-size: 14
 }
 
 nav ul{
 	margin: 0;
+	padding: 0;
 	display: inline;
 }
 
@@ -25,10 +34,29 @@ nav ul li{
 	color: white;
 	display: inline-block;
 	list-style-type: none;
-	padding: 5px 15px;
+	padding: 0 15px;
+	margin: 0
 
 }
 
 nav ul li a {
 	color: white;
+	font-family: sans-serif;
+}
+
+.row {
+	clear: both;
+}
+
+.col{
+	background: #222
+	border-radius: 5px;
+	padding: 10px 0.5%;
+	float: left;
+	width: 31%
+	margin:0.5%;
+}
+
+footer{
+	clear: both;
 }
