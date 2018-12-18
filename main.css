@@ -1,47 +1,66 @@
 body{
-	margin: 0;
+	margin: 10px;
 	font-family: sans-serif;
 }
 
 header{
 	background: #fcfcfc;
 	color: black;
-	padding: 15px 15px 0 15px;
-	margin: 15px;
+	padding: 10px 25px 0px 25px;
+	margin: 0px;
 }
 
 header h1 {
 	margin: 0;
 	display: inline;
-	font-family: sans-serif; 
-	font-size: 16;
+	font-family: franklin-gothic-urw; 
+	font-size: 22px;
+	font-weight: bold;
+	font-variant: small-caps;
 }
 
-header h2 {
-	margin: 0;
-	font-family: sans-serif; 
-	font-size: 14;
+.transparentbkg{
+	background-color: rgba(0,0,0,0);
 }
 
 nav ul{
 	margin: 0;
 	padding: 0;
 	display: inline;
+	float: right;
+
 }
 
 nav ul li{
 	background-color: #F0F8FF;
-	color: white;
 	display: inline-block;
 	list-style-type: none;
-	padding: 0 15px;
+	padding: 0 20px;
 	margin: 0;
 
 }
 
 nav ul li a {
-	color: white;
+	color: black;
 	font-family: sans-serif;
+	font-size: 16px
+}
+
+h1 {
+	margin: 10px;
+	padding: 15px 0 0 0;
+	font-family: franklin-gothic-urw; 
+	font-size: 36px;
+	text-align: center;
+}
+
+h2 {
+	margin: 10px;
+	padding: 15px 0 30px;
+	font-family: franklin-gothic-urw; 
+	font-size: 24px;
+	text-align: center;
+	font-style: italic;
 }
 
 .row {
@@ -49,14 +68,22 @@ nav ul li a {
 }
 
 .col{
-	background: #222;
-	border-radius: 5px;
-	padding: 10px 0.5%;
+	background: #FFC0CB;
+	padding: 0;
 	float: left;
-	width: 31%;
-	margin:0.5%;
+	width: 50%;
+	height: 150px;
+	margin:0;
+}
+.projectheader{
+	font-weight: bold;
+	text-align: center;
+	padding: 15px 0
 }
 
 footer{
 	clear: both;
+	text-align: center;
+	margin: 0;
+	padding:0;
 }
