@@ -86,7 +86,7 @@ a {
 	padding: 0;
 	float: left;
 	width: 50%;
-	height: 250px;
+	height: 300px;
 	margin:0;
 	position: relative;
 }
@@ -108,6 +108,10 @@ a {
 
 .image:hover {
 	background-size: 110%
+}
+
+.image:after{
+	content:attr(data-text);
 }
 
 footer{
