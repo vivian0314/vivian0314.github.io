@@ -1,5 +1,8 @@
+@import url(https://fonts.googleapis.com/css?family=Amatic+SC);
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
 body{
-	margin: 0;
+	margin: 0px;
 }
 
 header{
@@ -12,11 +15,13 @@ header{
 header h1 {
 	margin: 0;
 	display: inline;
-	font-family: Allura; 
-	font-size: 22px;
+	font-family:'Amatic SC';
+	letter-spacing: 0.2em;
+	font-size: 24px;
 	font-weight: bold;
 	font-variant: small-caps;
 }
+
 
 .transparentbkg{
 	background-color: rgba(0,0,0,0);
@@ -31,7 +36,7 @@ nav ul{
 }
 
 nav ul li{
-	background-color: #F0F8FF;
+	background-color: rgba(240, 248, 255,0.3);
 	display: inline-block;
 	list-style-type: none;
 	padding: 0 20px;
@@ -41,15 +46,17 @@ nav ul li{
 
 nav ul li a {
 	color: black;
-	font-family: franklin-gothic-urw;
-	font-size: 16px;
+	font-weight: bolder;
+	font-family: 'Amatic SC';
+	font-size: 18px;
+	letter-spacing: 0.1em;
 	text-decoration:none;
 }
 
 h1 {
 	margin: 10px;
 	padding: 50px 0 0 0;
-	font-family: franklin-gothic-urw; 
+	font-family: 'Montserrat', sans-serif; 
 	font-size: 36px;
 	text-align: center;
 }
@@ -57,18 +64,31 @@ h1 {
 h2 {
 	margin: 10px;
 	padding: 15px 0 70px;
-	font-family: franklin-gothic-urw; 
+	font-family: 'Montserrat', sans-serif; 
 	font-size: 24px;
+	font-weight: lighter;
 	text-align: center;
 	font-style: italic;
 }
 
 h3 {
-	font-family: sans-serif; 
+	font-family: 'Montserrat', sans-serif; 
 	font-size: 20px;
 	text-align: center;
-	font-weight: bold;
 	top: 50px
+}
+
+h4 {
+	font-family: 'Montserrat', sans-serif; 
+	font-size: 20px;
+	margin: 40px 0 0 40px;
+	font-weight: bold;
+}
+
+.paragraph {
+	margin: 15px 0 15px 40px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
 }
 
 a {
@@ -148,6 +168,7 @@ a {
 	color: rgba(0,0,0,1);
 	text-align: center;
 	font-size: 20px;
+	font-family: 'Montserrat', sans-serif;
 	font-weight: bold;
 	position: absolute;
 	top: 40%;
@@ -156,12 +177,11 @@ a {
 }
 
 .white-box {
-	background-color: white;
-	opacity: 0.7;
-	color: black;
+	background-color: rgba(255,255,255,0.3);
 	float: left;
-	width: 40%;
-	height: 100%;
+	width: 45%;
+	height: 500px;
+	margin: 25px 25px 0 20px;
 }
 
 footer{
