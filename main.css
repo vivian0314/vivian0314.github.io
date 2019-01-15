@@ -179,7 +179,8 @@ a {
 	background-color: rgba(255,255,255,0.65);
 	float: left;
 	width: 51%;
-	height: 980px;
+	height: 170vh;
+	resize: both;
 	margin: 60px 25px 20px 20px;
 }
 
