@@ -3,49 +3,28 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 @import url('https://fonts.googleapis.com/css?family=Mansalva');
 
+
+/*---------------------------GENERAL-------------------------------*/
+
 body{
 	margin: 0px;
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+	justify-content: space-between
 }
 
-header{
-	background: white;
-	color: black;
-	padding: 0px;
-	margin: 60px 75px 0px 55px;
-}
-
-
-nav ul{
-	margin-right: 0px;
-	margin-left: 0px;
-	padding: 0;
-	display: inline;
-	float: right;
-
-}
-
-nav ul li{
-	display: inline-block;
-	list-style-type: none; /*no bullets*/
-	padding: 0 15px;
+ul{
 	margin: 0;
-
+	padding: 0;
 }
 
-nav ul li a {
-	color: grey;
-	font-weight: bolder;
-	font-size: 30px;
-	letter-spacing: 0.1em;
-	text-decoration:none;
-}
-	
-footer{
-	clear: both;
-	text-align: center;
-	margin: 0 0 0 0;
-	padding:0;
-	font-family: 'Open Sans', sans-serif;
+ul li{
+	display: inline;
+	list-style-type: none;
+	float: left;
+	margin: 0;
+	padding: 0;
 }
 
 h1 {
@@ -65,27 +44,70 @@ p {
 	line-height: 25px;
 }
 
-.row {
-	clear: both;
-	margin:25px 60px 25px 100px;
+
+/*---------------------------NAVIGATION-------------------------------*/
+
+header{
+	background: white;
+	color: black;
+	padding: 0px;
+	margin: 60px 75px 0px 55px;
 }
 
-.bio-col-1{;
+nav ul{
+	margin-right: 0px;
+	margin-left: 0px;
 	padding: 0;
-	float: left;
-  	width: 55%;
-	margin: 0;
-	position: relative;
+	display: inline;
+	float: right;
+
 }
 
-.bio-col-2{;
-	padding: 0;
-	float: left;
-  	width: 45%;
+nav ul li{
+	display: inline-block;
+	list-style-type: none; /*no bullets*/
+	padding: 0 15px;
 	margin: 0;
-	position: relative;
 }
 
+
+nav ul li a {
+	color: grey;
+	font-weight: bolder;
+	font-size: 30px;
+	letter-spacing: 0.1em;
+	text-decoration:none;
+}
+
+/*---------------------------FOOTER-------------------------------*/
+.contact-icon{
+	padding: 0 10px 0 0;
+} /*used in Bio page as well*/
+
+#footer-wrap {
+	display: flex;
+	margin-top: 10px;
+	justify-content: flex-end; /*justify to right*/
+	align-items: center; /*vertical align*/
+	background-color: black;
+	color: white;
+	width: 100%;
+	height: 50px;
+}
+
+#footer-wrap p {
+	font-size: 14px;
+	font-family:'Mansalva';
+	order: 1;
+	margin: 0 15px 0 0;
+}
+
+#footer-wrap ul{
+	order: 2;
+ /*take up free space and push content to the right = right align */
+}
+
+/*---------------------------BIO PAGE-------------------------------*/
 
 #welcome{
 	font-family: Mansalva;
@@ -94,15 +116,82 @@ p {
 	line-height: normal;
 }
 
-.img-container{
+.bio-wrap{
+	display: flex;
+	flex-direction: row;
+	margin:25px 60px 25px 100px;
+
+}
+
+.bio-col-1{;
+	order: 1;
+	flex: 1;
+	padding: 0;
+	float: left;
+  	width: 55%;
+	margin: 0;
+	position: relative;
+}
+
+.bio-col-2{;
+	order: 2;
+	flex: 1;
+	padding: 0;
+	float: left;
+  	width: 45%;
+	margin: 0;
+}
+
+.bio-img-container{
 	text-align: right;
 	margin-top: 40px;
 }
 
+/*---------------------------WORK PROJECTS-------------------------------*/
+
+.proj-wrap{
+	margin: 40px 0px 20px 100px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.proj-col-1 {
+	order: 1;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-content: stretch;
+	margin: 0 7.5px 0 0;
+}
+
+.proj-col-2 {
+	order: 2;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-content: stretch;
+	margin: 0 0 0 7.5px;
+}
 
 
+.project{
+	margin-bottom: 10px;
+}
+
+.proj-img-container{
+	margin: 0;
+}
+
+img .proj-img{
+	object-fit: cover;
+}
+
+
+/*---------------------------OLD STUFF-------------------------------*/
 
 /*CSS stuff made before*/
+/*
 
 .image{
 	object-fit: cover;
